@@ -1,1 +1,592 @@
+@font-face {
+	font-family: iconfont;
+	src: url(http://g.tbcdn.cn/tb/icon-font/1.1.5/iconfont.eot);
+}
+* {
+	font-family: arial;
+	font-size: 12px;
+}
+body {
+	background-color: #eeeeed;
+}
+#webWidth {
+	width: 1280px;
+	margin: 0 auto;
+}
+#header {
+	width: 100%;
+	height: 56px;
+	background-color: #2189bf;
+}
+#headerContentWidth {
+	width: 1280px;
+	margin: 0 auto;
+	position: relative;
+}
+#headerLogo {
+	margin: 10px 50px;
+	float: left;
+}
 
+#search form {
+	width: 284px;
+	height: 28px;
+	border-radius: 14px;
+	background-color: #fff;
+	padding: 0 14px;
+	margin: 14px 0 ;
+	position: absolute;
+	left: 810px;	
+}
+#search form img {
+	position: absolute;
+	top: 4px;
+}
+
+#search input {
+	width: 260px;
+	height: 28px;
+	border: none;
+	outline: medium;
+	margin-left: 24px;
+}
+#search button img {
+	position: absolute;
+	left: -16px;
+}
+#search button {
+	position: absolute;
+	left: 1156px;
+	top: 20px;
+	border: none;
+	outline: medium;
+	background-color: #2189bf;
+	color: #fff;
+	cursor: pointer;
+}   
+#sidebar {
+	width: 260px;
+	height: 1200px;
+	background-color: #2a2e3d;
+	float:left;
+	position: relative;
+}
+#info img,
+#info p {
+	float: left;
+}
+#info {
+	width: 260px;
+	height: 58px;
+	padding: 18px 0;
+	margin-left: 45px;
+}
+#info p {
+	color: #fff;
+	font-size: 14px;
+	font-family: arial;
+	line-height: 58px;
+	text-indent: 18px;
+}
+#infoNumber td {
+	width: 84px;
+	height: 28px;
+	text-align: center;
+	color: #657589;
+}
+#infoNumber .ln {
+	border-right: 3px solid #313545;
+}
+#infoNumber {
+	margin-left: 33px;
+	margin-bottom: 20px;
+}
+#infoCatalog li {
+	line-height: 48px;
+	text-indent: 45px;
+}
+#infoCatalog li:hover {
+	background-color: #393d4e;
+}
+#infoCatalogUnfold li {
+	line-height: 30px;
+	margin-left: 20px;
+}
+#infoCatalogUnfold li:nth-child(2) {
+	margin-left: 16px;
+}
+#infoCatalogUnfoldNt {
+	margin-left: 15px;
+}
+#infoCatalog a {
+	color: #657589;
+}
+#infoCatalog li:first-child {
+	background-color: #393d4e;
+}
+#infoCatalog .selected {
+	color: #fff;
+}
+#infoCatalog img {
+	display: inline;
+}
+#infoCatalog span {
+	margin-left: 12px;
+}
+
+#main {
+	background-color: #eeeeed;
+	width: 1020px;
+	height: 1200px;
+	float: left;
+}
+#mainHeader {
+	width: 1020px;
+	height: 30px;
+	color: #aaa;
+	background-color: #fff;
+	text-indent: 30px;
+	line-height: 30px;
+
+}
+#container {
+	width: 890px;
+	margin: 0 auto;
+}
+#containerSearch {
+	width: 888px;
+	height: 84px;
+	background-color: #fff;
+	margin-top: 20px;
+	border: 1px solid #cacdd1;
+}
+#containerSearch span {
+	color: #aaa;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#containerSearch div {
+	float: left;
+	margin: 10px 0 0 20px ;
+}
+
+#containerSearchNumber select,
+#searchDetail select {
+	width: 68px;
+	height: 24px;
+	margin-bottom: 5px;
+}
+#buyerSeller {
+	padding-right: 28px;
+	position: relative;
+}
+#buyerSeller img {
+	position: absolute;
+	top: 7px;
+	left: 167px;
+}
+#buyerSeller a {
+	display: block;
+	color: #fff;
+	position: absolute;
+	top: 18px;
+	left: 181px;
+}
+#buyerSeller select,
+#searchDetail .last {
+	width: 120px;
+	height: 24px;
+	margin-bottom: 5px;
+}
+#searchDetail input {
+	width: 116px;
+	height: 24px;
+	margin-bottom: 5px;
+	margin-top: -2px;
+}
+#searchBtn button {
+	cursor: pointer;
+	width: 50px;
+	height: 25px;
+	background-color: #388ac1;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+#historySearch,
+#statistics {
+	width: 890px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	position: relative;
+}
+#statistics {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+#historySearch > div {
+	background-color: #fff;
+	height: 64px;
+	float: left;
+	margin-left: 4px;
+	border: 1px solid #cacdd1;
+	text-align: center;
+}
+#historySearch img {
+	display: inline;
+}
+#historySearch #leftArrow {
+	margin-left: 0;
+}
+#historySearch #leftArrow,
+#historySearch #rightArrow {
+	width: 30px;
+	line-height: 64px;
+}
+#historySearch #leftArrow a,
+#historySearch #rightArrow a {
+	font-size: 24px;
+}
+#historySearch .timePrice {
+	width: 108px;
+}
+#historySearch .timePrice div {
+	width: 107px;
+	height: 2px;
+	background-color: #4288c8;
+	border:1px solid #669ed3;
+	margin-top: -1px;
+	display: none;
+}
+#historySearch .timePrice div:hover {
+	display: block;
+}
+#historySearch .timePrice p {
+	margin-top: 10px;
+}
+#historySearch .timePrice span {
+	
+	font-size: 18px;
+	color: #ec6500;
+}
+#historySearch .timePrice span img {
+	padding-top: 12px;
+
+}
+#historySearch #history {
+	width: 132px;
+	text-align: left;
+}
+#history a {
+	position: absolute;
+	top: 25px;
+	color: #000;
+}
+#history img {
+	margin: 13px 10px 13px 20px;
+}
+#statistics > div {
+	width: 200px;
+	height: 70px;
+	background-color: #fff;
+	border: 1px solid #cacdd1;
+	float: left;
+	margin-left: 27px;
+}
+#statistics div:first-child {
+	margin-left: 0px;
+}
+#statistics .colorBar {
+	width: 4px;
+	height: 70px;
+}
+#statistics .colorBlock {
+	width: 60px;
+	height: 45px;
+}
+#statistics1 div,
+#statistics2 div,
+#statistics3 div,
+#statistics4 div {
+	float: left;
+}
+#statistics1 .colorBar,
+#statistics1 .colorBlock {
+	background-color: #43b29d;
+}
+#statistics2 .colorBar,
+#statistics2 .colorBlock {
+	background-color: #388ac1;
+}
+#statistics3 .colorBar,
+#statistics3 .colorBlock {
+	background-color: #d04a36;
+}
+#statistics4 .colorBar,
+#statistics4 .colorBlock {
+	background-color: #e2cd46;
+}
+#statistics .statisticsValue p {
+	margin-left: 8px;
+	margin-top: 10px;
+	color: #aaa;
+}
+#statistics .statisticsValue p:first-child {
+	color: #000;
+	margin-top: 18px;
+}
+#statistics .colorBlock {
+	margin: 13px 0 12px 74px;
+}
+#fourBlocks > div {
+	float: left;
+}
+#project,
+#projectSearch,
+#calender,
+#carRankings {
+	width: 528px;
+	height: 354px;
+	border: 1px solid #cacdd1;
+	border-radius: 6px;
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+#projectSearch {
+	width: 348px;
+	margin-left: 8px;
+}
+#calender {
+	width: 348px;
+	margin-right: 8px;
+}
+#projectHeader,
+#projectSearchHeader,
+#calenderHeader,
+#carRankingsHeader {
+	width: 508px;
+	height: 38px;
+	color: #aaa;
+	border: 1px solid #cacdd1;
+	border-top: none;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	line-height: 38px;
+	padding-left: 20px;
+	margin-left: -1px;
+	background-color: #f4f5f7;
+}
+#projectSearchHeader,
+#calenderHeader {
+	width: 328px;
+}
+#projectTab li {
+	display: inline-block;
+	width: 80px;
+	height: 24px;
+	border-radius: 4px 4px 0 0;
+	margin-right: 4px;
+	background-color: #ededf0;
+	line-height: 24px;
+	text-align: center;
+}
+#projectTab li:first-child {
+	border: 1px solid #cacdd1;
+	border-bottom: 1px solid #fff;
+	background-color: #fff;
+}
+#projectTab a {
+	color: #000;
+}
+#projectTab {
+	margin-left: 20px;
+	margin-top: 10px;
+}
+#tableList {
+	width: 486px;
+	height: 248px;
+	border: 1px solid #cacdd1;
+	border-radius: 0 4px 4px 4px;
+	margin-left: 20px;
+	margin-top: -1px;
+}
+#tableList td {
+	border-right: 0;
+	border-bottom: 0;
+	width: 100px;
+	height: 28px;
+	text-align: center;
+	vertical-align: cener;
+}
+#tableList tr:first-child td:first-child {
+	background-color: #f4f5f6;
+}
+#tableList table {
+	margin: 28px 0 0 35px;
+	border-color: #eeeeed;
+	border-top: 0;
+	border-left: 0;
+}
+#projectSearch table {
+	margin: 16px 0 0 32px;
+
+}
+#projectSearch table img {
+	display: inline;
+}
+#projectSearch .tableTitle {
+	color: #aaa;
+	margin-bottom: 5px;
+}
+#projectSearch table p {
+	margin-bottom: 5px;
+}
+#projectSearch table td {
+	padding-left: 10px;
+	padding-top: 5px;
+
+}
+#projectSearch .priceBorder {
+	width: 80px;
+	border-top: 1px solid #cacdd1;
+	border-right: 1px solid #cacdd1;
+	border-bottom: 1px solid #cacdd1;
+}
+#projectSearch .chargeBorder {
+	width: 170px;
+	border-top: 1px solid #cacdd1;
+	border-bottom: 1px solid #cacdd1;
+}
+#projectSearch .projectDescription {
+	height: 135px;
+	border-bottom: 1px solid #cacdd1;
+	vertical-align: top;
+}
+#projectSearch form {
+	margin: 5px 0 0 35px;
+}
+#projectSearch form button {
+	cursor: pointer;
+	margin-left: 125px;
+	background-color: #388ac1;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	width: 50px;
+	height: 24px;
+	text-align: center;
+}
+#calender form,
+#calender table {
+	margin: 8px 0 8px 20px;
+}
+#calender form select:nth-child(1) {
+	width: 64px;
+}
+#calender form select:nth-child(2) {
+	width: 85px;
+}
+#calender form select:nth-child(3) {
+	width: 74px;
+}
+#calender form select {
+	height: 22px;
+	margin-right: 3px;
+}
+#calender form button {
+	cursor: pointer;
+	width: 64px;
+	height: 22px;
+	background-color: #fff;
+	border: 1px solid #aaa;
+}
+#calender table td {
+	width: 38px;
+	height: 38px;
+	text-align: center;
+	border: 1px solid #fff;
+}
+#calender .tableContent td:hover {
+	cursor: pointer;
+	border-color: #f5ca38;
+}
+#calender .tableContent tr:first-child td:nth-child(1),
+#calender .tableContent tr:first-child td:nth-child(2),
+#calender .tableContent tr:first-child td:nth-child(3),
+#calender .tableContent tr:first-child td:nth-child(4),
+#calender .tableContent tr:nth-child(5) td:nth-child(7) {
+	cursor: auto;
+	border-color: #fff;
+}
+#calender .tableHeader td {
+	width: 42px;
+	height: 28px;
+	border: none;
+	border-top: 1px solid #a9cfec;
+	border-bottom: 1px solid #cacdd1;
+}
+#carRankings table {
+	margin: 18px 0 0 38px;
+}
+#carRankings table td {
+	height: 25px;
+	border-right: 0;
+	border-bottom: 0;
+	text-align: center;
+	vertical-align: center;
+}
+#carRankings table {
+	border-top: 0;
+	border-left: 0;
+	border-color: #eeeeed;
+}
+#carRankings table tr td:first-child {
+	width: 65px;
+}
+#carRankings table tr td:nth-child(2) {
+	width: 90px;
+}
+#carRankings table tr td:nth-child(3) {
+	width: 290px;
+}
+#carRankings img {
+	display: inline;
+	margin-left: 20px;
+}
+#carRankings table tr:first-child td:nth-child(3) {
+	text-align: left;
+	text-indent: 23px;
+}
+#carRankings table tr:hover {
+	background-color: #eeeeed;
+}
+#carRankings table tr:first-child:hover {
+	background-color: #fff;
+}
+#carRankings .indexbar {
+	width: 168px;
+	height: 4px;
+	background-color: #ddd;
+	float: left;
+	margin-top: 5px;
+	margin-left: 20px;
+}
+#carRankings .indexbarbuick {
+	width: 55px;
+	height: 4px;
+	background-color: #7ecaf0;
+}
+#carRankings table tr:nth-child(11) td:nth-child(3) span {
+	float: left;
+	margin-left: 22px;
+}
+select {
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	text-indent: 5px;
+	background: url("../img/selectarrow1.png") no-repeat scroll right center;
+}
