@@ -111,6 +111,9 @@ body {
 #infoCatalogUnfold li:nth-child(2) {
 	margin-left: 16px;
 }
+#infoCatalog img {
+	vertical-align: middle;
+}
 #infoCatalogUnfoldNt {
 	margin-left: 15px;
 }
